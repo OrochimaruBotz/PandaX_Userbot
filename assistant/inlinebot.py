@@ -49,7 +49,7 @@ import psutil
 from Panda._func.assistant_helpers import download_yt
 from pyrogram.types import InputMediaAudio, InputMediaVideo
 
-ilhammansiz = "https://telegra.ph/file/336d811bce4f1d1053fbf.jpg"
+ilhammansiz = "https://telegra.ph/file/155909b7aa9ed8149664d.jpg"
 Petercord_Userbot = pyrobot
 db_m = TinyDB("./PandaVersion/Panda/secret.json")
 db_s = TinyDB("./PandaVersion/Panda/not4u.json")
@@ -248,7 +248,7 @@ async def owo(client, inline_query):
         ]
         if Config.LOAD_UNOFFICIAL_PLUGINS:
             total_ = len(CMD_HELP)
-        nice_text = f"**PandaUserbot Inline** \n\n**Version :** `{pandaversion}` \n**Pyrogram Version :** `{__version__}` \n**Modules :** {total_}"
+        nice_text = f"**Gojoserbot Inline** \n\n**Version :** `{pandaversion}` \n**Pyrogram Version :** `{__version__}` \n**Modules :** {total_}"
         await client.answer_inline_query(
             inline_query.id,
             cache_time=0,
@@ -361,7 +361,7 @@ async def cmd_buutton(client, cb):
                 )
             ]
         ]
-    await cb.edit_message_text("🎗 Data PandaUserbot 🎗", reply_markup=InlineKeyboardMarkup(bttn))
+    await cb.edit_message_text("🎗 Data GojoUserbot 🎗", reply_markup=InlineKeyboardMarkup(bttn))
 
 @bot.on_callback_query(filters.regex(pattern="backO_to_help_menu"))
 @cb_wrapper
@@ -375,7 +375,7 @@ async def black_menu(client, cb):
             ],
             [
                 InlineKeyboardButton(
-                    text="🏧 Data PandaUserbot 🏧", callback_data=f"make_ilham_bot"
+                    text="🏧 Data GojoUserbot 🏧", callback_data=f"make_ilham_bot"
                 )
             ],
             [
@@ -595,7 +595,7 @@ async def get_back_vro(client, cb):
         is_official = True
     cmd_list = CMD_LIST if is_official else XTRA_CMD_LIST
     buttons = paginate_help(page_number, cmd_list, "helpme", is_official=is_official)
-    nice_text = f"**PandaUserbot Inline** \n\n**Version :** `{pandaversion}` \n**Pyrogram Version :** `{__version__}` \n**Modules :** `{total_}`"
+    nice_text = f"**GojoUserbot Inline** \n\n**Version :** `{pandaversion}` \n**Pyrogram Version :** `{__version__}` \n**Modules :** `{total_}`"
     await cb.edit_message_text(nice_text, reply_markup=InlineKeyboardMarkup(buttons))
 
 
