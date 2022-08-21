@@ -96,7 +96,7 @@ async def plugininfo(input_str, event, flag):
 
 
 async def grpinfo():
-    outstr = "**Plugins in Panda-Userbot are:**\n\n"
+    outstr = "**Plugins in Gojo-Userbot are:**\n\n"
     outstr += f"**👤 Owner : ** {mention}\n"
     outstr += f"**📜 Usage : ** `{cmdprefix}help <plugin name>`\n\n"
     category = ["modules", "plugins", "music"]
@@ -129,7 +129,7 @@ async def cmdlist():
     pattern="help ?(-c|-p|-t)? ?(.*)?",
     command=("help", plugin_category),
     info={
-        "header": "To get guide for Panda-Userbot.",
+        "header": "To get guide for Gojo-Userbot.",
         "description": "To get information or guide for the command or plugin",
         "note": "if command name and plugin name is same then you get guide for plugin. So by using this flag you get command guide",
         "flags": {
@@ -207,7 +207,7 @@ async def _(event):
             outstr += f"  - `{cmdprefix}{cmd}`\n"
         outstr += f"**👩‍💻 Usage : ** `{cmdprefix}help -c <command name>`"
     await edit_or_reply(
-        event, outstr, aslink=True, linktext="Total Commands of Pandauserbot are :"
+        event, outstr, aslink=True, linktext="Total Commands of Gojoserbot are :"
     )
 
 
@@ -228,7 +228,7 @@ async def _(event):
         out = f"**I found {len(found)} command(s) for: **`{cmd}`\n\n{out_str}"
         out += f"\n\n__For more info check {cmdprefix}help -c <command>__"
     else:
-        out = f"I can't find any such command `{cmd}` in PandaUserbot"
+        out = f"I can't find any such command `{cmd}` in GojoUserbot"
     await edit_or_reply(event, out)
 
 
