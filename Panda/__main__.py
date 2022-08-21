@@ -24,7 +24,7 @@ except Exception as e:
 cmdhr = Panda.Config.COMMAND_HAND_LER
 
 MSG_ON = """
-Panda-Userbot
+Gojo-Userbot
 ━━
 Pyrogram Version - `{}'
 Ketik `{}alive` untuk Mengecheck Bot
@@ -44,7 +44,7 @@ def start():
         Panda.PandaBot.loop.run_until_complete(memulai())
         Panda.PandaBot.loop.run_until_complete(utils.join())
         Panda.PandaBot.loop.run_until_complete(utils.ongrup())
-        LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ Version:{Panda.__version__} [TELAH DIAKTIFKAN]")
+        LOGS.info(f"꧁༺ Gojo Userbot ༻꧂\n⚙️ Version:{Panda.__version__} [TELAH DIAKTIFKAN]")
 
 
 async def ongruppyro():
@@ -57,7 +57,7 @@ async def ongruppyro():
                 await Panda.pyrobot3.send_message(BOTLOG_CHATID, MSG_ON.format(pyrover, cmdhr))
             if Panda.pyrobot4:
                 await Panda.pyrobot4.send_message(BOTLOG_CHATID, MSG_ON.format(pyrover, cmdhr))
-            LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ PyroVersion:{pyrover} [TELAH DIAKTIFKAN]")
+            LOGS.info(f"꧁༺ Gojo Userbot ༻꧂\n⚙️ PyroVersion:{pyrover} [TELAH DIAKTIFKAN]")
         except Exception:
             pass
                   
@@ -65,7 +65,7 @@ async def ongruppyro():
 def startpyro():
     if Panda.pyrobot:
         Panda.pyrobot.loop.run_until_complete(ongruppyro())
-        LOGS.info(f"꧁༺ Panda Userbot ༻꧂\n⚙️ PyroVersion:{pyrover} [TELAH DIAKTIFKAN]")
+        LOGS.info(f"꧁༺ Gojo Userbot ༻꧂\n⚙️ PyroVersion:{pyrover} [TELAH DIAKTIFKAN]")
                    
       
 
