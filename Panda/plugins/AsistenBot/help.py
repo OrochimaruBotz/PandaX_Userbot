@@ -1,10 +1,10 @@
 from telethon import events, Button
 from Panda import PandaBot
 bot = PandaBot.tgbot
-X = "https://telegra.ph/file/695cb726224d2a7037399.jpg"
+X = "https://telegra.ph/file/155909b7aa9ed8149664d.jpg"
 from Panda.modules import mention
-owner = "https://t.me/diemmmmmmmmmm"
-support = "https://t.me/TeamSquadUserbotSupport"
+owner = "https://t.me/krinjYaDeck"
+support = "https://t.me/StorianimeID"
 btn =[
     [Button.inline("📂 Notes 📂", data="notes"), Button.inline("🐼 Animation 🐼", data="animasi")],
     [Button.inline("🤡 Admin 🤡", data="admin"), Button.inline("🏷 Bans 🏷", data="bans")],
@@ -29,7 +29,7 @@ helpn =[
     [Button.inline("🚫 Close 🚫", data="closeit")]]
 
 HELP_TEXT = f"""
-**Hello 🙋\nSaya Asistennya bot: {mention}\nIni Tombol Menu Help Asisten PandaX_Userbot:**
+**Hello 🙋\nSaya Asistennya bot: {mention}\nIni Tombol Menu Help Asisten Gojo_Userbot:**
 
 Support** [UserBotSupport]({support})**
 """
