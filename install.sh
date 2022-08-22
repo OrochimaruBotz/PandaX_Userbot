@@ -2,9 +2,9 @@ terakhir () {
     echo "
     
 =+---------------------------------------------------------+=
-꧁༺ Panda Userbot ༻꧂
-Copyright (C) 2021 PandaX_Userbot
-Powered By @diemmmmmmmmmm with Telegram
+꧁༺ Gojo Userbot ༻꧂
+Copyright (C) 2021 GojoUserbot
+Powered By @KrinjYDeckk with Telegram
 =+---------------------------------------------------------+=
     "
 }
