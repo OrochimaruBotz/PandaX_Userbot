@@ -2,7 +2,7 @@ FROM python:3.9
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 COPY . .
-RUN python3 -m Panda
+RUN bash install.sh
 
 # command to run on container start
-ENTRYPOINT [ "python3", "-m", "Panda" ]
+ENTRYPOINT [ "bash", "install sh" ]
