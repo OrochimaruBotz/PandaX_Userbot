@@ -1,1 +1,1 @@
-worker: bash start.sh
+python3 -m Panda
