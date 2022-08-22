@@ -44,7 +44,7 @@ usernames = Config.TG_BOT_USERNAME
 async def redis(alive):
     await PandaBot.get_me()
     await get_readable_time((time.time() - StartTime))
-    await alive.edit("꧁༺ Panda Userbot ༻꧂")
+    await alive.edit("꧁༺ Gojo Userbot ༻꧂")
     await alive.edit("꧁༺ Userbot ༻꧂")
     await asyncio.sleep(1)
     if LOGO:
@@ -69,7 +69,7 @@ async def redis(alive):
 
 
 aliveess = f"""
-{CUSTOM_ALIVE_TEXT}
+GojoUserBot
 
 ☉ 👤 𝗢𝘄𝗻𝗲𝗿: {NAME}
 
